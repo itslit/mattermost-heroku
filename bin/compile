@@ -11,6 +11,7 @@ MATTERMOST_TYPE="$(cat $ENV_DIR/MATTERMOST_TYPE)"
 MATTERMOST_URL="https://releases.mattermost.com/$MATTERMOST_VERSION/mattermost-$MATTERMOST_TYPE-$MATTERMOST_VERSION-linux-amd64.tar.gz"
 
 echo "-----> Downloading and unpacking Mattermost with Git"
+git remote rm origin
 git init .
 git remote add origin https://github.com/KamenShah/mattermost-server  
 git pull origin master
