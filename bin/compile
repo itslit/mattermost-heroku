@@ -11,8 +11,5 @@ MATTERMOST_TYPE="$(cat $ENV_DIR/MATTERMOST_TYPE)"
 MATTERMOST_URL="https://releases.mattermost.com/$MATTERMOST_VERSION/mattermost-$MATTERMOST_TYPE-$MATTERMOST_VERSION-linux-amd64.tar.gz"
 
 echo "-----> Downloading and unpacking Mattermost with Git"
-git clone https://github.com/KamenShah/mattermost-server ${BUILD_DIR}
+curl -s -L "${MATTERMOST_URL}" | tar -zxf - --strip-components=1 -C ${BUILD_DIR}
 mkdir data/
-
-
-	
