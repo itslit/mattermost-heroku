@@ -12,5 +12,5 @@ MATTERMOST_URL="https://releases.mattermost.com/$MATTERMOST_VERSION/mattermost-$
 
 echo "-----> Downloading and unpacking Mattermost with Git"
 
-curl -s -L "${MATTERMOST_URL}" | tar -zxf - --strip-components=1 -C ${BUILD_DIR}
+curl -s -L https://releases.mattermost.com/4.4.3/mattermost-team-4.4.3-linux-amd64.tar.gz | tar -zxf - --strip-components=1 -C ${BUILD_DIR}
 mkdir data/
