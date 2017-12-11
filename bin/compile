@@ -12,5 +12,9 @@ MATTERMOST_URL="https://releases.mattermost.com/$MATTERMOST_VERSION/mattermost-$
 
 echo "-----> Downloading and unpacking Mattermost with Git"
 
-git clone https://github.com/KamenShah/CompiledMattermost  ${BUILD_DIR}
+git init .
+git remote add -t \* -f origin <https://github.com/KamenShah/CompiledMattermost  >
+git checkout master
+
+${BUILD_DIR}
 mkdir data/
