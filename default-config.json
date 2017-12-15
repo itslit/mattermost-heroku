@@ -55,7 +55,7 @@
         "AllowedUntrustedInternalConnections": ""
     },
     "TeamSettings": {
-        "SiteName": "Mattermost",
+        "SiteName": "Send It",
         "MaxUsersPerTeam": 1000,
         "EnableTeamCreation": false,
         "EnableUserCreation": true,
