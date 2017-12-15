@@ -56,10 +56,10 @@
     },
     "TeamSettings": {
         "SiteName": "Mattermost",
-        "MaxUsersPerTeam": 50,
-        "EnableTeamCreation": true,
+        "MaxUsersPerTeam": 1000,
+        "EnableTeamCreation": false,
         "EnableUserCreation": true,
-        "EnableOpenServer": false,
+        "EnableOpenServer": true,
         "RestrictCreationToDomains": "",
         "EnableCustomBrand": false,
         "CustomBrandText": "",
@@ -129,16 +129,16 @@
         "EnableSignInWithUsername": true,
         "SendEmailNotifications": true,
         "RequireEmailVerification": false,
-        "FeedbackName": "",
-        "FeedbackEmail": "test@example.com",
-        "FeedbackOrganization": "",
+        "FeedbackName": "Send It",
+        "FeedbackEmail": "getBumblr@gmail.com",
+        "FeedbackOrganization": "Send It",
         "SMTPUsername": "",
         "SMTPPassword": "",
         "SMTPServer": "dockerhost",
         "SMTPPort": "2500",
         "ConnectionSecurity": "",
         "InviteSalt": "mtt8hrn4tmo5d8nz91jg3z7gr8xudb4z",
-        "SendPushNotifications": false,
+        "SendPushNotifications": true,
         "PushNotificationServer": "",
         "PushNotificationContents": "generic",
         "EnableEmailBatching": false,
@@ -155,8 +155,8 @@
         "VaryByHeader": ""
     },
     "PrivacySettings": {
-        "ShowEmailAddress": true,
-        "ShowFullName": true
+        "ShowEmailAddress": false,
+        "ShowFullName": false
     },
     "SupportSettings": {
         "TermsOfServiceLink": "http://senditapp.blogspot.com/2017/12/terms-of-service.html/",
@@ -285,9 +285,9 @@
         "AllowBannerDismissal": true
     },
     "ThemeSettings": {
-        "EnableThemeSelection": true,
-        "DefaultTheme": "default",
-        "AllowCustomThemes": true,
+        "EnableThemeSelection": false,
+        "DefaultTheme": "Organization",
+        "AllowCustomThemes": false,
         "AllowedThemes": []
     },
     "ElasticsearchSettings": {
