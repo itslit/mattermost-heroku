@@ -1,7 +1,7 @@
 {
     "name": "Mattermost Heroku",
     "description": "Deploy Mattermost to Heroku",
-    "repository": "https://github.com/KamenShah/mattermost-heroku",
+    "repository": "https://github.com/itslit/mattermost-heroku",
     "keywords": [
         "mattermost",
         "nginx"
@@ -9,10 +9,10 @@
     "success_url": "/",
     "buildpacks": [
         {
-            "url": "https://github.com/KamenShah/nginx-buildpack"
+            "url": "https://github.com/itslit/nginx-buildpack"
         },
         {
-            "url": "https://github.com/KamenShah/mattermost-heroku"
+            "url": "https://github.com/itslit/mattermost-heroku"
         }
     ],
     "env": {
